@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(11, 54, 110);
+}
+
+nav {
+    background-color: rgb(19, 34, 56);
+    padding: 20px;
+}
+
+
+
+#logo {
+    display: flex;
+    align-items: center;
+    color: rgb(123, 174, 241);
+    font-family: Teko;
+}
+
+#logo h1 {
+    font-size: 50px;
+    text-shadow: rgb(123, 174, 241) 0px 0px 10px;
+}
+
+#logo span {
+    font-size: 50px;
+    text-shadow: rgb(123, 174, 241) 0px 0px 10px;
+    margin: -5px 0px 0px 5px;
+}
