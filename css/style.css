@@ -1,10 +1,13 @@
 body {
-    background-color: rgb(11, 54, 110);
+    background-color: rgb(26, 48, 82);
 }
 
 nav {
-    background-color: rgb(19, 34, 56);
+    background-color: #132238;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -12,7 +15,7 @@ nav {
 #logo {
     display: flex;
     align-items: center;
-    color: rgb(123, 174, 241);
+    color: white;
     font-family: Teko;
 }
 
@@ -25,4 +28,158 @@ nav {
     font-size: 50px;
     text-shadow: rgb(123, 174, 241) 0px 0px 10px;
     margin: -5px 0px 0px 5px;
+}
+
+nav ul{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+ 
+nav li a{
+    font-family: 'Nunito';
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 300;
+    transition: 0.3s color;
+}
+
+nav li a:hover{
+    color: #5b97f1;
+}
+
+nav ul{
+    display: flex;
+}
+
+section{
+    min-height: calc(100vh - 90px);
+}
+
+#tensao-container{
+    width: 95%;
+    display: flex;
+    min-height: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.historico, .calc{
+    width: 47%;
+    min-height: 38vw;
+    padding: 15px;
+}
+
+.historico{
+    background-color: #222222;
+}
+
+.calc{
+    background-color: whitesmoke;
+}
+
+.title{
+    font-size: 60px;
+    font-family: 'Teko';
+    text-align: center;
+    margin-top: 20px;
+}
+
+.historico .title{
+    color: whitesmoke;
+}
+
+.calc .title{
+    color: #222222;
+}
+
+.formula{
+    width: 100%;
+    font-family: 'Nunito';
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title-formula{
+    font-size: 32px;
+}
+
+.formula-itens{
+    font-size: 28px;
+    margin-top: 20px;
+    color: #6b6b6b;
+}
+
+.formula-fact{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.formula-fact :nth-child(1){
+    color: red;
+}
+
+.formula-fact :nth-child(2){
+    color: #0058e6;
+}
+
+.formula-fact :nth-child(3){
+    color: blueviolet;
+}
+
+.form-formula{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-formula p{
+    font-size: 40px;
+    font-family: 'Nunito';
+    margin: 0 10px;
+}
+.form-formula input{
+    font-size: 60px;
+    width: 40%;
+    text-align: center;
+    font-family: 'Nunito';
+    padding: 5px 0;
+    outline: 0;
+    font-weight: 300;
+    color: #6b6b6b;
+}
+
+.button-calc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+}
+
+.button-calc button{
+    font-family: 'Teko';
+    font-size: 40px;
+    border: 0;
+    outline: 0;
+    background-color: #003181;
+    color: whitesmoke;
+    padding: 10px;
+    transition: 0.3s background-color;
+    cursor: pointer;
+}
+
+.button-calc button:hover{
+    background-color: #022153;
+}
+
+.result{
+    margin-top: 20px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
 }

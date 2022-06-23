@@ -23,7 +23,59 @@
                <h1> ELECTRICALC </h1>   
                <span class="material-symbols-outlined"> offline_bolt </span>
             </div>
+                <ul> 
+                    <li><a href=""> Tensão </a></li>
+                    <li><a href=""> Potência </a></li>
+                    <li><a href=""> Lorem </a></li>
+                </ul>
         </nav>
     </header>
+    <main>
+        <section>
+            <div class="center">
+                <div id="tensao-container">
+                    <div class="historico">
+                        <h1 class="title">
+                            HISTÓRICO
+                        </h1>
+                        <div class="hist-space"></div>
+                    </div>
+                    <div class="calc">
+                        <h1 class="title">
+                            CALCULADORA
+                        </h1>
+                        <div class="formula">
+                            <h3 class="title-formula"> Fórmula: </h3>
+                            <p class="formula-itens"> U: Tensão; R: Resistência; I: Intensidade</p>
+                            <p class="formula-fact"> <span> U </span> = <span> R </span> x <span> I </span> </p>
+                        </div>
+                        <div class="in-calc">
+                            <form>
+                                <div class="form-formula">
+                                
+                                        <input type="text" name="r" placeholder="R">
+                                    <p>
+                                        X
+                                    </p>                                
+                                        <input type="text" name="i" placeholder="I">
+                                </div>
+                    
+                            </form>
+                            <div class="button-calc"> 
+                                <button id="calc-tensao"> CALCULAR </button>
+                            </div>
+                            <div class="result">
+                                <p> U = </p>
+                                <div class="result-space">
+                                    <p> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
+
