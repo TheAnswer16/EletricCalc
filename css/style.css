@@ -67,9 +67,8 @@ section{
 }
 
 .historico, .calc{
-    width: 47%;
+    width: 49%;
     min-height: 38vw;
-    padding: 15px;
 }
 
 .historico{
@@ -84,7 +83,7 @@ section{
     font-size: 60px;
     font-family: 'Teko';
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .historico .title{
@@ -130,7 +129,7 @@ section{
 }
 
 .form-formula{
-    margin-top: 70px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,7 +175,23 @@ section{
 }
 
 .result{
-    margin-top: 20px;
+    margin-top: 30px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.result p{
+    font-family: 'Teko';
+    font-size: 60px;
+}
+
+.result .result-space{
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px #9b9b9b;
+    margin-left: 10px;
+    color: #6b6b6b;
 }
 
 .center{
