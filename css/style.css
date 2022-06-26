@@ -1,3 +1,25 @@
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #545454 #222222;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 9px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #222222;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #545454;
+    border-radius: 14px;
+    border: 0px solid #ffffff;
+  }
+
 body {
     background-color: rgb(26, 48, 82);
 }
@@ -63,16 +85,34 @@ section{
     min-height: 80%;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .historico, .calc{
     width: 49%;
-    min-height: 38vw;
+    min-height: 82vh;
+    max-height: 82vh;
 }
 
 .historico{
-    background-color: #222222;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.historico p{
+    margin-top: 15px;
+    color: whitesmoke;
+    font-family: 'Nunito';
+    font-size: 20px;
+}
+
+.hist-space{
+    width:85%;
+    overflow-y: auto;
+    height: 400px;
+    padding-bottom:15px;
 }
 
 .calc{
@@ -83,7 +123,7 @@ section{
     font-size: 60px;
     font-family: 'Teko';
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .historico .title{
@@ -98,15 +138,15 @@ section{
     width: 100%;
     font-family: 'Nunito';
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .title-formula{
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .formula-itens{
-    font-size: 28px;
+    font-size: 25px;
     margin-top: 20px;
     color: #6b6b6b;
 }
@@ -141,7 +181,7 @@ section{
     margin: 0 10px;
 }
 .form-formula input{
-    font-size: 60px;
+    font-size: 40px;
     width: 40%;
     text-align: center;
     font-family: 'Nunito';
@@ -149,6 +189,8 @@ section{
     outline: 0;
     font-weight: 300;
     color: #6b6b6b;
+    border: 0;
+    box-shadow: 0 0 5px #9b9b9b;
 }
 
 .button-calc{
@@ -160,12 +202,12 @@ section{
 
 .button-calc button{
     font-family: 'Teko';
-    font-size: 40px;
+    font-size: 30px;
     border: 0;
     outline: 0;
     background-color: #003181;
     color: whitesmoke;
-    padding: 10px;
+    padding: 5px;
     transition: 0.3s background-color;
     cursor: pointer;
 }
@@ -175,7 +217,7 @@ section{
 }
 
 .result{
-    margin-top: 30px;
+    margin-top: 35px;
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -183,12 +225,14 @@ section{
 
 .result p{
     font-family: 'Teko';
-    font-size: 60px;
+    font-size: 50px;
+    line-height: 35px;
+    margin-top: 4px;
 }
 
 .result .result-space{
     background-color: white;
-    padding: 10px;
+    padding: 7px;
     box-shadow: 0 0 10px #9b9b9b;
     margin-left: 10px;
     color: #6b6b6b;
