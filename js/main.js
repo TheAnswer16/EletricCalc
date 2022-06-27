@@ -16,7 +16,7 @@ function calculaTensao(){
     let I =  Number($('.i').val());
     let result = R * I;
     let newHistItem =
-        `<p>${R}Ω x ${I}A = ${result} </p>`;
+        `<p>${R}Ω x ${I}A = ${result} V </p>`;
     $('.hist-space').append(newHistItem);
     
     $('.result-space p').text(result + " V");

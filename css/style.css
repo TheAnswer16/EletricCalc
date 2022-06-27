@@ -24,6 +24,10 @@ body {
     background-color: rgb(26, 48, 82);
 }
 
+.on-page{
+    font-weight: bold;
+}
+
 nav {
     background-color: #132238;
     padding: 20px;
@@ -53,7 +57,7 @@ nav {
 }
 
 nav ul{
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
 }
