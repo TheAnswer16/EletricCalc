@@ -47,25 +47,25 @@
                         </h1>
                         <div class="formula">
                             <h3 class="title-formula"> Fórmula: </h3>
-                            <p class="formula-itens"> P: Potência; I: Intensidade; U: Tensão </p>
-                            <p class="formula-fact"> <span> P </span> = <span> I </span> x <span> U </span> </p>
+                            <p class="formula-itens"> I: Intensidade (Corrente); U: Tensão; R: Resistência; </p>
+                            <p class="formula-fact"> <span> I </span> = <span> U </span> / <span> R </span> </p>
                         </div>
                         <div class="in-calc">
                             <form>
                                 <div class="form-formula">
-                                        <input type="text" name="i" class="i-pot"  placeholder="I (A)">
+                                        <input type="text" name="u-cor" placeholder="U (V)" class="u-cor">
                                     <p>
-                                        X
+                                        /
                                     </p>                                
-                                        <input type="text" name="u" class="u-pot" placeholder="U (V)">
+                                        <input type="text" name="r" placeholder="R (Ω)" class="r-cor">
                                 </div>
                     
                             </form>
                             <div class="button-calc"> 
-                                <button id="calc-potencia" onclick="calculaPotencia()" > CALCULAR </button>
+                                <button id="calc-tensao" onclick='calculaCorrente()'> CALCULAR </button>
                             </div>
                             <div class="result">
-                                <p> P (W) = </p>
+                                <p> I (A) = </p>
                                 <div class="result-space">
                                     <p> 000 </p>
                                 </div>
@@ -77,7 +77,7 @@
         </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>  
     <script src="js/main.js"></script>
 </body>
 </html>

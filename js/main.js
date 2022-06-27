@@ -22,6 +22,29 @@ function calculaTensao(){
     $('.result-space p').text(result + " V");
 }
 
+function calculaResistencia(){
+    let U =  Number($('.u-res').val());
+    let I =  Number($('.i-res').val());
+    let result = U / I;
+    let newHistItem =
+        `<p>${U}V / ${I}A = ${result} Ω  </p>`;
+    $('.hist-space').append(newHistItem);
+
+    $('.result-space p').text(result + " Ω");
+}
+
+function calculaCorrente(){
+    let U =  Number($('.u-cor').val());
+    let R =  Number($('.r-cor').val());
+    let result = U / R;
+    let newHistItem =
+        `<p>${U}V / ${R}Ω = ${result} A </p>`;
+    $('.hist-space').append(newHistItem);
+
+    $('.result-space p').text(result + " A");
+}
+
+
 function calculaPotencia(){
     let iPot =  Number($('.i-pot').val());
     let uPot =  Number($('.u-pot').val());
